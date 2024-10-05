@@ -83,5 +83,5 @@ services:
       - ../../../config/params:/config
     privileged: true # Allow Connection to USB/Dialout 
     restart: unless-stopped # Restart the Container until it is explicitly stopped  
-    command: ros2 launch realsense2_camera rs_launch.py camera_name:='rs_'s unite_imu_method:=2 align_depth.enable:=True enable_gyro:=true enable_accel:=true pointcloud.enable:=true pointcloud.stream_filter:=0 allow_no_texture_point:=true pointcloud.ordered_pc:=true pointcloud.stream_index_filter:=1 # Command to Run when the container starts 
+    command: ros2 launch realsense2_camera rs_launch.py camera_name:='rs_' unite_imu_method:=2 align_depth.enable:=True enable_gyro:=true enable_accel:=true pointcloud.enable:=true pointcloud.stream_filter:=0 allow_no_texture_point:=true pointcloud.ordered_pc:=true pointcloud.stream_index_filter:=1 # Command to Run when the container starts 
 ```
