@@ -4,7 +4,7 @@ ARG BASE_IMAGE=ros:foxy
 #################################
 #   Librealsense Builder Stage  #
 #################################
-FROM $BASE_IMAGE as librealsense-builder
+FROM $BASE_IMAGE AS librealsense-builder
 
 SHELL ["/bin/bash", "-c"]
 
@@ -63,7 +63,7 @@ RUN cd /usr/src/librealsense \
 ######################################
 #   librealsense Base Image Stage    #
 ######################################
-FROM ${BASE_IMAGE} as librealsense
+FROM ${BASE_IMAGE} AS librealsense
 
 SHELL ["/bin/bash", "-c"]
 
