@@ -32,7 +32,11 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 
-## Edit /etc/docker/daemon.json
+## Modify /etc/docker/daemon.json to Use Nvidia Runtime as Default 
+sudo sed -i '7s/     }/     },/' /etc/docker/daemon.json
+sudo sed -i '/     },/a     "default-runtime": "nvidia"' /etc/docker/daemon.json
+
+## Correct /etc/docker/daemon.json file 
 # {
 #     "runtimes": {
 #         "nvidia": {
