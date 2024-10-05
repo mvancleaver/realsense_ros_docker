@@ -60,7 +60,7 @@ docker compose run rs_driver
 
 # Modify the Container Image 
 
-The Container is build using the Installation Instructions in [`realsense_ros_docker/docker/Dockerfile.realsense`](https://github.com/mvancleaver/realsense_ros_docker/blob/main/docker/Dockerfile.realsense)
+The Container is built using the Installation Instructions in [`realsense_ros_docker/docker/Dockerfile.realsense`](https://github.com/mvancleaver/realsense_ros_docker/blob/main/docker/Dockerfile.realsense)
 
 # Modify the Container Runtime 
 
